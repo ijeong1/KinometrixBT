@@ -1,0 +1,134 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc"
+    tools:context="com.kinometrix.kinometrixbt.MainActivity">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+    <TextView
+        android:id="@+id/fullscreen_content"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:gravity="center"
+        android:keepScreenOn="true"
+        android:text="@string/dummy_content"
+        android:alpha="0.4"
+        android:textColor="#33b5e5"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/chart1"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"/>
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/chart2"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"/>
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/chart3"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"/>
+    </LinearLayout>
+
+
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:id="@+id/fullscreen_content_controls"
+            style="?metaButtonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@color/black_overlay"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/TextEdit_FirstName"
+                    android:hint="FIRST NAME"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="0.5"
+                    android:layout_height="match_parent" />
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/TextEdit_LastName"
+                    android:layout_width="wrap_content"
+                    android:hint="LAST NAME"
+                    android:layout_weight="0.5"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Spinner
+                    android:id="@+id/spinnerBodyPart"
+                    android:layout_width="1dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/BodyPart" />
+                <Spinner
+                    android:id="@+id/spinnerExerciseType"
+                    android:layout_width="1dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/ExerciseType" />
+                <Spinner
+                    android:id="@+id/spinnerSide"
+                    android:layout_width="1dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/ExerciseSide" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/tare_button"
+                    style="?metaButtonBarButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="@string/tare_button" />
+                <Button
+                    android:id="@+id/toggle_button"
+                    style="?metaButtonBarButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="@string/toggle_button1" />
+                <Button
+                    android:id="@+id/googledrive_button"
+                    style="?metaButtonBarButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="@string/googledrive_button" />
+                <Button
+                    android:id="@+id/quit_button"
+                    style="?metaButtonBarButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="@string/quit_button" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</FrameLayout>

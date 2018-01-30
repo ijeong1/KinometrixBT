@@ -1,0 +1,37 @@
+# Blender MTL File: ''
+# Material Count: 5
+newmtl tss_sensor
+Ns 0
+Ka 0.0 0.0 0.0
+Kd 0.15 0.15 0.15
+Ks 0.15 0.15 0.15
+d 1
+illum 2
+newmtl red
+Ns 0
+Ka 1.0 0.0 0.0
+Kd 1.0 0.0 0.0
+Ks 1.0 0.0 0.0
+d 1
+illum 2
+newmtl green
+Ns 0
+Ka 0.0 1.0 0.0
+Kd 0.0 1.0 0.0
+Ks 0.0 1.0 0.0
+d 1
+illum 2
+newmtl blue
+Ns 0
+Ka 0.0 0.0 1.0
+Kd 0.0 0.0 1.0
+Ks 0.0 0.0 1.0
+d 1
+illum 2
+newmtl led_color
+Ns 0
+Ka 0.0 0.0 1.0
+Kd 0.0 0.0 1.0
+Ks 0.0 0.0 1.0
+d 1
+illum 2

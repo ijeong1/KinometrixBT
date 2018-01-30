@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">KinometrixBT</string>
+
+    <string name="title_activity_main">KinometrixBT</string>
+    <string name="tare_button">Sensor Tare</string>
+    <string name="toggle_button1">Start Exam</string>
+    <string name="toggle_button2">Stop Exam</string>
+    <string name="quit_button">QUIT</string>
+    <string name="dummy_content">KINOMETRIX\nKINOMETRIX\nKINOMETRIX\nKINOMETRIX\nKINOMETRIX\nKINOMETRIX</string>
+
+    <string-array name="BodyPart">
+        <item>Knee</item>
+        <item>Ankle</item>
+        <item>Shoulder</item>
+    </string-array>
+    <string-array name="ExerciseType">
+        <item>Flexion</item>
+        <item>Abduction</item>
+        <item>Extension</item>
+    </string-array>
+    <string-array name="ExerciseSide">
+        <item>Left</item>
+        <item>Center</item>
+        <item>Right</item>
+    </string-array>
+    <string name="write_external_storage_permission_title">Write External Storage Permission</string>
+    <string name="write_external_storage_permission_text">Saving files required Write External Storage Permission</string>
+    <string name="get_account_permission_title">Get Account Permission</string>
+    <string name="get_account_permission_text">Saving files into Google Drive required Get Account Permission</string>
+    <string name="btn_ok">Ok</string>
+    <string name="no_network_connection_available">No network connection available.</string>
+    <string name="googledrive_button">Save To GoogleDrive</string>
+</resources>

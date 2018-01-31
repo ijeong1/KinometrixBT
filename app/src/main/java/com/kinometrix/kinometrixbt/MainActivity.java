@@ -196,7 +196,7 @@ public class MainActivity extends AppCompatActivity{
             e.printStackTrace();
         }*/
 
-        //Start the GL updating
+        //Start the sensor
         Message start_again_message = new Message();
         start_again_message.what = 287;
         btSensorHandler.sendMessage(start_again_message);
